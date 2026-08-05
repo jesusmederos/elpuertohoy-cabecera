@@ -12,7 +12,8 @@
   .lienzo { max-width:640px; margin:0 auto; padding:16px 16px 40px; }
   img.cabecera { width:100%; border-radius:14px; box-shadow:0 4px 20px rgba(15,26,38,.15); display:block; }
   .fecha { text-align:center; color:var(--apagado); margin:14px 0 4px; }
-  .fecha i { display:block; font-size:18px; font-weight:700; margin-bottom:2px; }
+  .fecha i { display:block; font-size:18px; font-weight:700; margin-bottom:2px; color:var(--azul); }
+  .fecha .lema { display:block; font-size:15px; font-weight:700; margin-bottom:2px; }
   h2 { font-size:20px; margin:26px 0 4px; border-bottom:2px solid #d7dfe8; padding-bottom:6px; }
   .bloque { background:#fff; border-radius:12px; padding:14px 16px; margin:10px 0; box-shadow:0 1px 6px rgba(15,26,38,.07); overflow-wrap:break-word; }
   a { color:var(--azul); text-decoration:none; }
@@ -21,6 +22,15 @@
   .suscribir p { color:var(--apagado); margin:0 0 14px; }
   a.boton { display:block; margin:10px 0; padding:14px; border-radius:12px; font-weight:700; color:#fff; }
   .tg { background:#1173d4; } .wa { background:#25d366; }
+  /* Compartir va antes de suscribirse y con menos peso visual: la acción fuerte
+     sigue siendo darse de alta en un canal. */
+  .compartir { margin-top:34px; text-align:center; }
+  button.boton-compartir { display:block; width:100%; margin:0 auto; padding:14px 16px;
+    border-radius:12px; font:inherit; font-weight:700; line-height:1.35; cursor:pointer;
+    background:#fff; color:var(--azul); border:2px solid var(--azul); }
+  button.boton-compartir:active { transform:scale(.98); }
+  .otros { margin-top:12px; font-size:15px; color:var(--apagado); }
+  .otros a { margin:0 10px; font-weight:600; }
   .pie { text-align:center; margin-top:26px; font-size:19px; font-weight:700; }
   ul.ediciones { list-style:none; padding:0; }
   ul.ediciones li { background:#fff; border-radius:12px; margin:10px 0; box-shadow:0 1px 6px rgba(15,26,38,.07); }
@@ -32,6 +42,7 @@
   <a href="https://boletin.elpuertohoy.com/"><img class="cabecera" src="https://boletin.elpuertohoy.com/cabecera.jpg" alt="El Puerto Hoy"></a>
   <h2>📚 Ediciones anteriores</h2>
   <ul class="ediciones">
+    <li><a href="https://boletin.elpuertohoy.com/2026-08-05.html">Miércoles, 5 de agosto de 2026</a></li>
     <li><a href="https://boletin.elpuertohoy.com/2026-08-04.html">Martes, 4 de agosto de 2026</a></li>
     <li><a href="https://boletin.elpuertohoy.com/2026-08-03.html">Lunes, 3 de agosto de 2026</a></li>
     <li><a href="https://boletin.elpuertohoy.com/2026-08-02.html">Domingo, 2 de agosto de 2026</a></li>
